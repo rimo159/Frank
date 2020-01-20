@@ -1,0 +1,17 @@
+.bezig{
+    font-size: 80px;
+    border: black 8px solid;
+}
+
+.tekst{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+.nieuw{
+    font-size: 30px;
+}
+
+/* .bordered{
+    border: red solid 2px;
+} */
