@@ -1,17 +1,19 @@
-.bezig{
-    font-size: 80px;
-    border: black 8px solid;
+body{
+    background-color: rgb(29, 29, 29);
 }
 
 .tekst{
     font-family: 'Courgette', cursive;
     text-align: center;
+    color: white;
 }
 
 .nieuw{
     font-size: 30px;
 }
 
-/* .bordered{
-    border: red solid 2px;
-} */
+.bezig{
+    color: gold;
+    font-size: 80px;
+    border: gold 8px solid;
+}
