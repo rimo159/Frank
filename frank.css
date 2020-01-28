@@ -283,3 +283,43 @@ body{
     width: auto;
 }
 
+.chicle{
+    font-family: 'Chicle', cursive;
+}
+
+.lijn1{
+    position: relative;
+    left: 35%;
+    font-size: 3.5vw;
+}
+.lijn2{
+    position: relative;
+    left: 40%;
+    font-size: 3.5vw;
+}
+.lijn3{
+    position: relative;
+    left: 50%;
+    font-size: 3.5vw;
+}
+
+.lily{
+    font-family: 'Lily Script One', cursive;
+}
+
+.liefde{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    border-top: white solid 8px;
+    border-bottom: white solid 8px;
+}
+
+.liefde:hover{
+    text-decoration: none;
+    color: rgba(223,190,106);
+    border-color: rgba(223,190,106);
+    background-color: white;
+}
+
+
