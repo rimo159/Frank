@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    background-color: black;
+}
+
+#myVideo {
+    z-index: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+.myBtn1 {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translate(-50%,-50%);    
+
+    min-width: 10%;
+    
+
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 80%;    
+    letter-spacing: 0.2em;
+    color: white;
+    border-radius: 0;
+    padding: 1%;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.625rem;
+    border: 2px solid rgba(223,190,106);
+    background-color: rgba(223,190,106, 0.4);
+    background
+}
+
+.myBtn1:hover {
+    color: #fff;
+    border: 2px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 99% 50%;
+  }
+
+  .myBtn2 {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%,-50%); 
+    
+    min-width: 10%;
+
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 80%;    
+    letter-spacing: 0.2em;
+    color: white;
+    border-radius: 0;
+    padding: 1%;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    background-color: rgba(223,190,106, 0.4);
+    margin: 0.625rem;
+    border: 2px solid rgba(223,190,106);
+}
+
+.myBtn2:hover {
+    color: #fff;
+    border: 2px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 99% 50%;
+  }
+
+  .myBtn1:focus{
+    outline: none;
+  }
+  .myBtn2:focus{
+      outline: none;
+  }
