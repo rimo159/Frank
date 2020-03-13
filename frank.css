@@ -307,7 +307,7 @@ body{
     font-family: 'Lily Script One', cursive;
 }
 
-.liefde{
+.kid{
     text-align: center;
     font-size: 2vw;
     color: white;
@@ -315,11 +315,19 @@ body{
     border-bottom: white solid 8px;
 }
 
-.liefde:hover{
+.kid:hover{
     text-decoration: none;
     color: rgba(223,190,106);
     border-color: rgba(223,190,106);
     background-color: white;
 }
+
+#parent:hover .kid {
+    text-decoration: none;
+    color: rgba(223,190,106);
+    border-color: rgba(223,190,106);
+    background-color: white;
+}
+
 
 

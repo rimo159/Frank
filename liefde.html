@@ -12,7 +12,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/29ee9155a6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Chicle|Lily+Script+One&display=swap" rel="stylesheet">
-    
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '237095170790186'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=237095170790186&ev=PageView
+        &noscript=1"/>
+    </noscript>
     
 </head>
 
@@ -26,6 +42,7 @@
             </div>
             
             <div class="d-md-none col-12 header bordered">
+
                 <a class="nav-link" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="containerMenu" onclick="myFunction(this)">
                         <div class="bar1"></div>
@@ -33,12 +50,14 @@
                         <div class="bar3"></div>
                     </div>
                 </a>
+
                 <div class="dropdown-menu" aria-labelledby="dropdown09">
                     <a class="dropdown-item" href="team.html">Team</a>
                     <a class="dropdown-item active" href="liefde.html">Liefde</a>
                     <a class="dropdown-item" href="merk.html">Merken</a>
                     <a class="dropdown-item" href="contact.html">Contact</a>
                 </div>
+
             </div>
 
             <div class="col-md-12 col-lg-6 d-none d-md-block fullwidth header bordered">
@@ -90,20 +109,23 @@
 
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 bordered">
-                <div class="bordered vakmanschap liefde">
-                    <div>
-                        <a href="verloving.html" class="liefde"><div>Verloving</div></a>
+                <div class="bordered" id="parent">
+                    <div class="vakmanschap kid">
+                        <a href="verloving.html" class="kid"><div>Verloving</div></a>
                     </div>
-                </div>
-                <a href="verloving.html"><img class="img-fluid volledig" src="img/wedding.png" alt="wedding"><br><br></a>
-                
+                    <a href="verloving.html"><img class="img-fluid volledig" src="img/wedding.png" alt="wedding"><br><br></a>
+                </div>   
             </div>
+
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 bordered">
-                <div class="vakmanschap liefde">
-                    <a href="trouwen.html" class="liefde"><div>Trouwen</div></a>
+                <div class="bordered" id="parent">
+                    <div class="vakmanschap kid" >
+                        <a href="trouwen.html" class="kid"><div>Trouwen</div></a>
+                    </div>
+                    <a href="trouwen.html"><img class="img-fluid volledig" src="img/wedding.png" alt="wedding"><br><br></a>
                 </div>
-                <a href="trouwen.html"><img class="img-fluid volledig" src="img/wedding.png" alt="wedding"><br><br></a>
             </div>
+
         </div>
         
     </div>
