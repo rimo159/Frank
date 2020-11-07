@@ -17,15 +17,10 @@ body {
 }
 
 .myBtn1 {
-    position: absolute;
-    top: 80%;
-    left: 40%;
-    transform: translate(-50%,-50%);    
+       
 
-    min-width: 10%;
+    min-width: 45%;
     
-
-    display: inline-block;
     background: transparent;
     text-transform: uppercase;
     font-weight: 500;
@@ -53,14 +48,9 @@ body {
   }
 
   .myBtn2 {
-    position: absolute;
-    top: 80%;
-    left: 60%;
-    transform: translate(-50%,-50%); 
     
-    min-width: 10%;
+    min-width: 45%;
 
-    display: inline-block;
     background: transparent;
     text-transform: uppercase;
     font-style: normal;
