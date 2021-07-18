@@ -76,9 +76,58 @@ body {
     background-position: 99% 50%;
   }
 
-  .myBtn1:focus{
+.myBtn1:focus{
     outline: none;
-  }
-  .myBtn2:focus{
-      outline: none;
-  }
+}
+.myBtn2:focus{
+    outline: none;
+}
+
+.tel-btn{
+    padding: 14px;
+    background: black;
+    color: #fff;
+	border-radius:10px;
+	text-align:center;
+    font-size:16px;
+    border: 3px solid white;
+}
+  
+.whatsapp-btn{
+    padding: 10px;
+    background-color:#25d366;
+	color:#FFF;
+	border-radius:10px;
+	text-align:center;
+    font-size:20px;
+    border: none;
+}
+
+.messenger-btn{
+    padding: 10px;
+    background: #2196F3;
+    color: #fff;
+	border-radius:10px;
+	text-align:center;
+    font-size:20px;
+    border: none;
+}
+.sms-btn{
+    padding: 10px;
+    background: black;
+    color: #fff;
+	border-radius:10px;
+	text-align:center;
+    font-size:20px;
+    border: 2px solid white;
+}
+
+i{
+    font-size:22px;
+    margin-right: 2%;
+}
+
+.messenger-btn:hover, .whatsapp-btn:hover, .tel-btn:hover, .sms-btn:hover, .tel-btn:hover{
+    color: white;
+    text-decoration: underline;
+}
