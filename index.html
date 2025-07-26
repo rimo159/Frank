@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <title>Frank Hellinx</title>
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="frank.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.jpg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/29ee9155a6.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="frank.js"></script>
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -29,120 +30,461 @@
         &noscript=1"/>
     </noscript>
 </head>
+
 <body>
-
     <div class="container-fluid">
-        <div class="row mt-5 justify-content-center">
-            <div class="col-lg-6 col-md-12 mt-5 justify-content-center">
-                <video class="video-fluid" loop poster="img/video.png" onclick="myFunction()" id="myVideo">
-                    <source src="img/startVideo.mp4" type="video/mp4">
-                </video>
-                <button id="myBtn1" class="myBtn1" onclick="myFunction()"><i class="fas fa-play"></i></button>
-                <button id="myBtn2" class="myBtn2" onclick="welkom()">Welkom</button>
+        
+        <div class="row">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 fullwidth header bordered">
+                <a href="index.html"><img src="img/bannerLogo.jpg" alt="logo" class="img-fluid logo centerhor"/></a>
             </div>
-            <div class="col-lg-6 col-md-12 mt-5">
-                <h1 class="text-white"><b>Corona-update</b></h1>
-                <h4 class="text-white">
-                    Wij zijn weer volledig open zonder afspraak!
-                </h4>
-
-                <!-- <img src="img/IMG-20210429-WA0000.jpg" alt=""> -->
-
-                <!-- <h5 class="text-white mt-3">
-                    Maar we maken het u gemakkelijk! <br>
-                    Een afspraak inplannen kan eenvoudig door:
-                </h5>
-                <div class="my-4">
-                    <a href="tel:003289235670" class="tel-btn my-3"><i class="fas fa-phone-alt"></i>Bellen 089/23.56.70</a>
-                    <a href="tel:0032479804158" class="tel-btn my-3"><i class="fas fa-phone-alt"></i>Bellen 0479/80.41.58</a>
+            
+            <div class="d-md-none col-12 header bordered">
+                <a class="nav-link" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="containerMenu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                    <a class="dropdown-item" href="team.html">Team</a>
+                    <a class="dropdown-item" href="liefde.html">Liefde</a>
+                    <a class="dropdown-item" href="merk.html">Merken</a>
+                    <a class="dropdown-item" href="contact.html">Contact</a>
                 </div>
-                <h5 class="text-white">
-                    Kan ook nog ter plaatse voor onze winkel op het moment zelf!
-                </h5>
+            </div>
 
-                <h4 class="text-white my-4">
-                    Je kan ons ook altijd bereiken via:
-                </h4>
-                <div class="my-4">
-                    <a href="https://wa.me/32479804158" class="whatsapp-btn my-3"><i class="fa fa-whatsapp my-float"></i>Whatsapp</a>
-                    <a href="http://m.me/JuwelierFrankHellinx" class="messenger-btn"><i class="fab fa-facebook-messenger"></i>Messenger</a>
-                    <a href="sms:0032479804158" class="sms-btn"><i class="fas fa-sms"></i>SMS</a>
-                </div>
-                <h4 class="text-white my-4">
-                    Of boek jouw afspraak volledig online!
-                </h4>
-                <div class="mb-4">
-                    <link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/18969848.css" id="acuity-button-styles" />
-                    <script src="https://embed.acuityscheduling.com/embed/button/18969848.js" async></script>
-                    <a href="https://app.acuityscheduling.com/schedule.php?owner=18969848" target="_blank" class="acuity-embed-button" 
-                        style="background: #000000; color: #fff; padding: 8px 12px; border: 2px solid white; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;
-                        -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; 
-                        text-decoration: none; display: inline-block; margin-left: auto; margin-right: auto; font-size: 28px;">
-                        Boek uw afspraak hier
-                    </a>
-                </div> -->
-                
-                <!-- <ul class="text-white">
-                    <li>09u00 - 20u00 tot en met 23 december (Behalve op zondag)</li>
-                    <li>09u30 - 18u00 op zondag</li>
-                    <li>09u00 - 17u00 op 24 december en 31 december</li>
-                    <li>Afspraak maken is niet nodig!</li>
-                </ul> -->
-                <h5 class="text-white mt-2">We werken volgens onze normale openingsuren:</h5>
-                <h5 class="text-white">Van maandag tot en met zaterdag doorlopend open van 9u30 tot 18u00</h5>
-                <!-- <h5 class="text-white">In december zijn we elke dag extra laat open van 9u30 tot 19u</h5>
-                <h5 class="text-white mb-4">Zondag 12 en 19 december zijn we ook extra open van 13u tot 18u</h5> -->
-                <h3 class="text-white">Blijf gezond en hou het veilig</h3>
-                <h3 class="text-white">Team Frank Hellinx</h3>
-                </p>
+            <div class="col-md-12 col-lg-6 d-none d-md-block fullwidth header bordered">
+                <br />
+                <ul class="nav nav-tabs nav-fill justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="liefde.html">Liefde</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="merk.html">Merken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-1 fullwidth header bordered">
+                <br>
             </div>
         </div>
     </div>
 
-    <!-- <div class="container-fluid">
-        <div class="row mt-5 justify-content-center">
-            <div class="col-lg-6 col-md-12 mt-5 justify-content-center">
-                <video class="video-fluid" loop poster="img/video.png" onclick="myFunction()" id="myVideo">
-                    <source src="img/startVideo.mp4" type="video/mp4">
-                </video>
-                <button id="myBtn1" class="myBtn1" onclick="myFunction()"><i class="fas fa-play"></i></button>
-                <button id="myBtn2" class="myBtn2" onclick="welkom()">Welkom</button>
+    <div class="container-fluid">
+
+        <!-- <div class="row bordered edges mt-3">
+            <div class="col-sm-1 col-md-2 col-lg-2 col-xl-2 bordered vakmanschap">
+                <br>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-8 col-xl-8 vakmanschap text-center">
+                <h2>Bekijk onze eindejaarsfolder hier en ga naar onze beperkte webshop!</h2>
+                <h5>Via onderstaande link kan je met de toegangscode "HEL" ons aanbod bezichtigen.</h5>
+                <a href="https://www.chronoshop.be/nl/login/index/index?___from_store=fr" target="_blank" style="color: white; text-decoration: underline;"><h5>Webshop</h5></a>
+
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-2 col-xl-2 bordered vakmanschap">
+                <br>
+            </div>
+        </div> -->
+
+        <!-- <div class="row bordered mb-3 justify-content-center">
+
+            <div class="col-sm-11 col-md-8 bordered mt-5">
+                
+                <div id="carfrank" class="carousel slide carousel-fade" data-ride="carousel"  data-pause="hover">
+    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/FRANK HELLINX - BILZEN1.jpg" alt="frank1" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN2.jpg" alt="frank2">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN3.jpg" alt="frank3" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN4.jpg" alt="frank4">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN5.jpg" alt="frank5">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN6.jpg" alt="frank6" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN7.jpg" alt="frank7">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN8.jpg" alt="frank8">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN9.jpg" alt="frank9" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN10.jpg" alt="frank10">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN11.jpg" alt="frank11">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN12.jpg" alt="frank12" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN13.jpg" alt="frank13">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN14.jpg" alt="frank14">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN15.jpg" alt="frank15" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN16.jpg" alt="frank16">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN17.jpg" alt="frank17" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN18.jpg" alt="frank18">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN19.jpg" alt="frank19">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN20.jpg" alt="frank20" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN21.jpg" alt="frank21">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN22.jpg" alt="frank22">
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN23.jpg" alt="frank23" >   
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img src="img/FRANK HELLINX - BILZEN24.jpg" alt="frank24">
+                        </div>
+    
+                        <a class="carousel-control-prev" href="#carfrank" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+    
+                        <a class="carousel-control-next" href="#carfrank" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                  </div>
+                  <br>
+                </div>
+            </div>
+            
+        </div> -->
+
+        <div class="row bordered">
+
+            <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-1 bordered">
+                <br>
+            </div>
+
+            <div class="d-none d-md-block col-md-10 bordered">
+                
+                <div id="carfrank" class="carousel slide carousel-fade" data-ride="carousel"  data-pause="hover">
+                    <ul class="carousel-indicators">
+                      <li data-target="#carfrank" data-slide-to="0" class="active"></li>
+                      <li data-target="#carfrank" data-slide-to="1"></li>
+                      <li data-target="#carfrank" data-slide-to="2"></li>
+                      <!-- <li data-target="#carfrank" data-slide-to="3"></li> -->
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/ingang.jpg" alt="winkel " >   
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/winkelBilzen.jpg" alt="welkom">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/team.png" alt="team">
+                        </div>
+
+                        <!-- <div class="carousel-item">
+                            <a href="liefde.html"><img src="img/trouwen.jpg" alt="liefde"></a>   
+                        </div> -->
+
+                        <!-- <div class="carousel-item">
+                            <img src="img/merken.png" alt="merken">  
+                        </div> -->
+
+                        <a class="carousel-control-prev" href="#carfrank" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#carfrank" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </a>
+                  </div>
+                  <br>
+                </div>
+            </div>
+
+            <div class="d-md-none col-sm-12 bordered">
+                
+                <div id="carfrank2" class="carousel slide carousel-fade" data-ride="carousel"  data-pause="hover">
+                    <ul class="carousel-indicators">
+                      <li data-target="#carfrank2" data-slide-to="0" class="active"></li>
+                      <li data-target="#carfrank2" data-slide-to="1"></li>
+                      <li data-target="#carfrank2" data-slide-to="2"></li>
+                      <!-- <li data-target="#carfrank2" data-slide-to="3"></li> -->
+                    </ul>
+
+                    <div class="carousel-inner carousel-inner2">
+                        <div class="carousel-item active">
+                            <img src="img/ingang.jpg" alt="winkel " >   
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/winkelBilzen.jpg" alt="welkom">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/team.png" alt="team">
+                        </div>
+
+                        <!-- <div class="carousel-item">
+                            <a href="trouw.html"><img src="img/trouwen.jpg" alt="liefdeen"></a>   
+                        </div> -->
+
+                        <!-- <div class="carousel-item">
+                            <img src="img/merken.png" alt="merken">  
+                        </div> -->
+
+                        <a class="carousel-control-prev" href="#carfrank2" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#carfrank2" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </a>
+                  </div>
+                  <br>
+                </div>
+            </div>
+
+
+            <div class="d-none d-md-block col-md-1 col-lg-1 col-xl-1 bordered">
+                <br>
             </div>
         </div>
-    </div> -->
-    
-    
 
-    
-    
-    
-    <script>
+        <div class="row bordered edges">
+            <div class="col-sm-1 col-md-2 col-lg-2 col-xl-2 bordered vakmanschap">
+                <br>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-8 col-xl-8 vakmanschap">
+                <p><b>Vakmanschap en service zijn de sleutelwoorden waar we elke dag aan willen werken.</b></p>
+                <p><b>Van de kleinste kindersieraden tot onze handgemaakte ringen, van onze oud goud collectie tot onze trouwringen, steeds willen we het beste juweel voor onze klanten.</b></p>
+                <p><b>Bovendien graveren wij gratis in elk aangekocht uurwerk uw naam zodat deze uurwerken nog persoonlijker worden. </b></p>
+                <p><b>Bij vervanging van de batterij krijgt u zo ook automatisch een korting.</b></p>
+            </div>
+            <div class="col-sm-1 col-md-2 col-lg-2 col-xl-2 bordered vakmanschap">
+                <br>
+            </div>
+        </div>
 
-        // Get the video
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn1")
+        <br><br>
+
+        <div class="row bordered">
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+
+            <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 bordered">
+                <img class="centerhor content" src="img/oudgoud.png" alt="oudgoud"><br>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 bordered texttransparant">
+                <br>
+                <h1><b>Maak (g)oud weer nieuw</b></h1>
+                <p>Met uw oud goud maken wij u een nieuw modern juweel tegen extra lage kostprijzen.</p>
+                <p>Dit kan al vanaf 5gr. en geelgoud kunnen we ook omvormen naar witgoud.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row bordered">
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+
+            <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 bordered">
+                <img class="centerhor content" src="img/zakhorloge.jpg" alt="zakhorloge"><br>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 bordered texttransparant">
+                <br>
+                <h1><b>Herstellingen</b></h1>
+                <p>
+
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row bordered">
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+
+            <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 bordered">
+                <img class="centerhor content" src="img/oorbellen.png" alt="oorbellen"><br>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 bordered texttransparant">
+                <br>
+                <h1><b>Oorbellen schieten</b></h1>
+                <p>
+                    De allereerste oorbelletjes zijn een belangrijke stap voor jonge kindjes.
+                    We werken met het moderne Studex 75 systeem en geheel volgens de hygiënische richtlijnen van de GGG.
+                    We zetten de oorbelletjes bij kindjes vanaf 3 jaar.
+                    We zetten ze ook steeds met twee tesamen.
+                    U hoeft hier geen afspraak voor te maken.
+                    Op onze facebookpagina ziet u regelmatig kindjes waarvan de oorbelletjes gezet zijn. Zo krijgt u alvast een beeld over hoe dit op een positieve manier gebeurt.
+                    Elk kindje krijgt ook een diploma en cadeautje en gaan allemaal blij naar buiten. <br>
+                    <a style="color: white;" href="https://www.studex.be/">Studex link</a>
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+        </div>
+        <br>
+
+        <div class="row bordered">
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+
+            <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-4 bordered">
+                <img class="centerhor content" src="img/see you.png" alt="gedenkjuwelen"><br>
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 bordered texttransparant">
+                <br>
+                <h1><b>Gedenkjuwelen</b></h1>
+                <p>
+                    Een gedenksieraad is niet zomaar een sieraad, maar een met een wel hele mooie betekenis.
+                    Het staat symbool voor de band tussen u en uw dierbare.
+                    Bij ons heeft u keuze uit hangers, ringen armbanden, kaarsenhouders enz.
+                    U kan kiezen voor het verwerken van as, haar, moedermelk, foto of vingerafdruk, de mogelijkheden zijn bijna eindeloos.
+                    Door middel van speciale hars is het zelfs mogelijk om de as zichtbaar te houden en ook hier kan u kiezen voor doorzichtig of kleur.
+                    Het verwerken van uw gedenksieraad gebeurt steeds met respect en in eigen atelier.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-1 bordered">
+                <br>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container-fluid">
         
-        function myFunction() {
-            if(video.paused){
-                video.play();
-                btn.innerHTML = '<i class="fas fa-pause"></i>'; 
-            }
-            else{
-                video.pause();
-                btn.innerHTML = '<i class="fas fa-play"></i>'; 
-            }
-                       
+        <div class="row footer">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-2 fullwidth centervert bordered">
+                <a href="index.html"><img src="img/staandeLogo.jpg" alt="logo" class="img-fluid centervert logoFooter centerhor"/></a>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 fullwidth bordered">
+                <div class="contactFooter">
+                    <span style="font-size: 22px;"><b>Openingsuren</b></span><br><br>
+                    <span>Maandag - zaterdag doorlopend:</span><br>
+                    <span>09u30 - 18u00</span><br>
+                    <span>Zondag voormiddag: enkel op afspraak</span><br><br>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 fullwidth bordered">
+                <div class="contactFooter">
+                    <span style="font-size: 22px;"><b>Contact</b></span><br><br>
+                    <span>De Commanderie 10</span><br>
+                    <span>3740 Bilzen</span><br>
+                    <span><a class="mail" href="tel:+3289235670"><i class="material-icons" style="font-size: 18px;" >call</i>  089/23.56.70</a></span><br>
+                    <span><a class="mail" href="mailto:frank.hellinx@telenet.be?" target="_top"><i class="material-icons" style="font-size:18px;color:white">email</i>  frank.hellinx@telenet.be</a></span><br><br>
+                    <a class="fb" href="https://www.facebook.com/JuwelierFrankHellinx/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="insta" href="https://www.instagram.com/frank.hellinx/?hl=" target="_blank"><i class="fab fa-instagram"></i></a><br><br>
+                </div>
+            </div>
+
+            
+
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 fullwidth bordered">
+                <div class="contactFooter">
+                    <span style="font-size: 22px;"><b>Parking</b></span><br><br>
+                    <span>Tik op de GPS de Romboutstraat in en maak gebruik van 2 uur gratis parkeren in de ondergrondse parking!</span><br><br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
         }
-
-        function welkom(){
-            location.replace("frank.html")
-        }
-
-    </script>
-
+    </script>  
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
 
 </body>
+
 </html>
